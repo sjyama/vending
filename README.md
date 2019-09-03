@@ -25,7 +25,7 @@
 
 * ### 機能（画面）一覧
   
-  - 自動販売機root画面（http://localhost:3000）
+  - 自動販売機root画面（http://localhost:3000 ）
 
     飲み物情報（Drinksデータ）の一覧表示
 
@@ -35,11 +35,11 @@
 
     【キャンセル】（未実装）→入金情報のクリア
   
-  - 入金画面（http://localhost:3000/deposits/show）
+  - 入金画面（http://localhost:3000/deposits/show ）
 
     お金情報（Moneyデータ）の一覧表示
   
-  - 入金状況の確認画面（http://localhost:3000/deposits）
+  - 入金状況の確認画面（http://localhost:3000/deposits ）
 
     入金情報（Depositsデータ）の一覧表示
 
@@ -49,7 +49,7 @@
 
     【キャンセル】→入金情報のクリア
   
-  - 飲み物のメンテナンス画面（http://localhost:3000/drinks）
+  - 飲み物のメンテナンス画面（http://localhost:3000/drinks ）
 
     飲み物情報の追加修正削除が可能。
 
@@ -57,7 +57,7 @@
 
     seedファイルでデータ投入可能。
   
-  - お金のメンテナンス画面（http://localhost:3000/moneys）
+  - お金のメンテナンス画面（http://localhost:3000/moneys ）
 
     お金情報の追加修正削除が可能。
 
