@@ -1,0 +1,10 @@
+<h1>Moneyのメンテナンス画面</h1>
+<% @moneys.each do |money| %>
+  <p>
+    <%= money.name %>
+    <%= money.price %>
+    <%= link_to "削除", money_path(money.id), method: :delete, data: {confirm: "削除しますか?"}  %>
+    <%= link_to "編集", edit_money_path(money.id), method: :get %> 
+  </p>
+<% end %>
+<%= link_to "Money追加画面へ", "/moneys/new" %>

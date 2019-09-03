@@ -1,0 +1,11 @@
+<h1>deposit/show</h1>
+<h3>入金画面</h3>
+
+<% @moneys.each do |money| %>
+  <p>
+    <%= money.name %>
+    （<%= money.price %>円）
+    <%= button_to "お金投入！！", {controller: 'deposits', action: 'create'}, params: {money_id: money.id}, method: :post %>
+  </p>
+  <% end %>
+  <%= link_to "【入金状況の確認画面へ】", "/deposits" %>

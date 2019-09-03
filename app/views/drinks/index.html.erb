@@ -1,0 +1,12 @@
+<h1>飲み物のメンテナンス画面</h1>
+
+<% @drinks.each do |drink| %>
+  <p>
+    <%= image_tag drink.image.thumb.url if drink.image? %>
+    <%= drink.name %>
+    <%= drink.price %>
+    <%= link_to "削除", drink_path(drink.id), method: :delete, data: {confirm: "削除しますか?"}  %>
+    <%= link_to "編集", edit_drink_path(drink.id), method: :get %> 
+  </p>
+<% end %>
+<%= link_to "（飲み物追加画面へ）", "/drinks/new" %>

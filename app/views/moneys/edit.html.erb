@@ -1,0 +1,6 @@
+<%= form_for @money do |f| %>
+  <h1>Money修正画面</h1>
+  <p>お金の名前：<%= f.text_field :name %></p>
+  <p>金額：<%= f.text_field :price %></p>
+  <input type="submit" value="保存" >
+<% end %>

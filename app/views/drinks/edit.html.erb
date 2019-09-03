@@ -1,0 +1,7 @@
+<%= form_for @drink, url: drink_path(@drink), html: { method: :patch } do |f| %>
+  <p>飲み物情報修正画面</p>
+  <p>飲み物画像：<%= f.file_field :image %></p>
+  <p>飲み物名：<%= f.text_field :name %></p>
+  <p>値段：<%= f.text_field :price %></p>
+  <input type="submit" value="保存" >
+<% end %>

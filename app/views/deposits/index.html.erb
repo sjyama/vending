@@ -1,0 +1,16 @@
+<h1>deposit/index</h1>
+<h3>入金状況の確認画面</h3>
+
+<% @deposits.each do |depo| %>
+  <p>
+    id：<%= depo.id %>
+    、money_id：<%= depo.money_id %>
+    ｜<%= depo.money.name %>
+    （<%= depo.money.price %>円）
+    × <%= depo.quantity %>
+  </p>
+<% end %>
+
+<%= link_to " 【続けて入金】", "/deposits/show" %>
+<%= link_to " 【購入へ】", "/" %>
+<%= link_to " 【キャンセル】", deposit_path(@deposits), method: :delete, data: { confirm: '入金情報を削除しますか？' }  %>
